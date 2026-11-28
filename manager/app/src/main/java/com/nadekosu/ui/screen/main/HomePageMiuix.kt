@@ -122,7 +122,7 @@ import top.yukonga.miuix.kmp.basic.Icon
 import top.yukonga.miuix.kmp.basic.IconButton
 import top.yukonga.miuix.kmp.basic.ListPopupColumn
 import top.yukonga.miuix.kmp.basic.PopupPositionProvider
-import top.yukonga.miuix.kmp.overlay.OverlayListPopup
+import top.yukonga.miuix.kmp.window.WindowListPopup
 import com.nadekosu.ui.component.ListPopupDefaults
 import com.nadekosu.ui.component.miuix.DropdownItem
 import top.yukonga.miuix.kmp.basic.MiuixScrollBehavior
@@ -324,7 +324,7 @@ private fun MiuixRebootAction() {
             tint = MiuixTheme.colorScheme.onBackground,
         )
     }
-    OverlayListPopup(
+    WindowListPopup(
         show = expanded,
         popupPositionProvider = ListPopupDefaults.MenuPositionProvider,
         alignment = PopupPositionProvider.Align.TopEnd,
