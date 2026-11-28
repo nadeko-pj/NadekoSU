@@ -68,7 +68,7 @@ import top.yukonga.miuix.kmp.basic.TabRow
 import top.yukonga.miuix.kmp.basic.Text
 import top.yukonga.miuix.kmp.icon.MiuixIcons
 import top.yukonga.miuix.kmp.icon.basic.ArrowRight
-import top.yukonga.miuix.kmp.menu.OverlayIconDropdownMenu
+import top.yukonga.miuix.kmp.menu.WindowIconDropdownMenu
 import top.yukonga.miuix.kmp.theme.MiuixTheme
 
 @Composable
@@ -118,7 +118,7 @@ internal fun MiuixSuperUserPage(bottomPadding: Dp) {
             )
         },
         actions = {
-            OverlayIconDropdownMenu(
+            WindowIconDropdownMenu(
                 entry = DropdownEntry(
                     items = SortType.entries.mapIndexed { index, type ->
                         DropdownItem(
@@ -136,7 +136,7 @@ internal fun MiuixSuperUserPage(bottomPadding: Dp) {
                     tint = MiuixTheme.colorScheme.onBackground,
                 )
             }
-            OverlayIconDropdownMenu(
+            WindowIconDropdownMenu(
                 entry = DropdownEntry(
                     items = listOf(
                         DropdownItem(
